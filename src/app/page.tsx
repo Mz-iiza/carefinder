@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { BsAirplane } from "react-icons/bs";
 import { BiSolidAmbulance } from "react-icons/bi";
@@ -18,9 +19,9 @@ const page = () => {
           </p>
           <p>
             At CareFinder, we believe that everyone deserves convenient access
-            to healthcare services, whether it's for routine check-ups,
+            to healthcare services, whether its for routine check-ups,
             emergencies, or specialized treatments. In times of urgent medical
-            needs, CareFinder is here to assist you.{" "}
+            needs, CareFinder is here to assist you.
           </p>
           <p>
             We provide quick access to emergency services with Emergency Air

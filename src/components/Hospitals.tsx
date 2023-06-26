@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../lib/firebase.config";
 
-const hospitals = () => {
+const Hospitals = () => {
   const [data, setData] = useState<DataType[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -57,4 +57,4 @@ const hospitals = () => {
   );
 };
 
-export default hospitals;
+export default Hospitals;
