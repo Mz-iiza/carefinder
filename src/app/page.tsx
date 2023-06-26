@@ -2,7 +2,7 @@
 import React from "react";
 import { BsAirplane } from "react-icons/bs";
 import { BiSolidAmbulance } from "react-icons/bi";
-import Hospitals from "../components/Hospitals";
+import Hospitals from "./components/Hospitals";
 
 const page = () => {
   return (

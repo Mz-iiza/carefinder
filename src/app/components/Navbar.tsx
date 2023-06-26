@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import { TbActivityHeartbeat } from "react-icons/tb";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,19 +50,27 @@ function Navbar() {
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button>
-            <Link
-              href="/sign-in"
-              className="text-sm font-semibold leading-6 mr-2"
-            >
-              Sign up
-            </Link>
-          </button>
-          <button>
-            <Link href="/sign-up" className="text-sm font-semibold leading-6 ">
-              Log in
-            </Link>
-          </button>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <SignedOut>
+            <button>
+              <Link
+                href="/sign-up"
+                className="text-sm font-semibold leading-6 mr-2"
+              >
+                Sign up
+              </Link>
+            </button>
+            <button>
+              <Link
+                href="/sign-in"
+                className="text-sm font-semibold leading-6 "
+              >
+                Log in
+              </Link>
+            </button>
+          </SignedOut>
         </div>
       </nav>
       <Dialog
