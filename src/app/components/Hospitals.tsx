@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../lib/firebase.config";
+import Link from "next/link";
 
 const Hospitals = () => {
   const [data, setData] = useState<DataType[]>([]);
@@ -42,14 +43,15 @@ const Hospitals = () => {
       />
       <ul>
         {filteredData.map((item) => (
-          <li key={item.id} className="m-2">
-            Hospital: {item.Hospital}
-            <br />
-            Address: {item.Address}
-            <br />
-            Number: {item.Number}
-            <br />
-            Website: {item.Website}
+          <li key={item.id} className="flex flex-col m-2">
+            <div>
+              Hospital: {item.Hospital}
+              Address: {item.Address}
+              Number: {item.Number}
+            </div>
+            <a href={item.Website}>
+              <button className="btn">visit website</button>
+            </a>
           </li>
         ))}
       </ul>

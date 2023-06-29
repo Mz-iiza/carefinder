@@ -6,7 +6,7 @@ import Hospitals from "./components/Hospitals";
 
 const page = () => {
   return (
-    <div className="mt-40 mx-8 mdmx-10 md:mx-8">
+    <div className="mt-40 mx-8 md:mx-10 w-full">
       <section id="hero" className="flex flex-col items-center ">
         <h1 className="bold mb-3 text-3xl uppercase">Welcome to CareFinder</h1>
         <div className="my-5">
@@ -30,7 +30,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 my-4">
+        <div className="flex flex-col md:flex-row gap-4 my-4">
           <button className="btn bg-red-500 text-white">
             <BiSolidAmbulance /> Call Air Ambulance
           </button>
