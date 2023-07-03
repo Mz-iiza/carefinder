@@ -109,7 +109,7 @@ function Navbar() {
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
-                  href="https://medium.com/@philipnwabuwa/carefinder-app-documentation-f93f5ba76eb6"
+                  href="https://medium.com/@ujuigweokwu/carefinder-documentation-3a75ae08035b"
                   className="-mx-3 text-white block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-gray-900"
                 >
                   Documentation
