@@ -41,7 +41,7 @@ function Navbar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 items-center">
-          <Link href="/" className="text-sm font-semibold leading-6 ">
+          <Link href="https://medium.com/@ujuigweokwu/carefinder-documentation-3a75ae08035b" className="text-sm font-semibold leading-6 ">
             Documentaion
           </Link>
 
